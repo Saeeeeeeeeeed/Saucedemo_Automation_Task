@@ -41,7 +41,7 @@ public class TestBase {
 
     @Parameters({"url"})
     @BeforeTest
-    public void setUp (@Optional("https://www.amazon.eg/")String url) {
+    public void setUp (@Optional("https://www.saucedemo.com/")String url) {
         try {
             log.info("Initialize Selenium WebDriver before tests' Class");
             WebDriverManager.chromedriver().setup();
