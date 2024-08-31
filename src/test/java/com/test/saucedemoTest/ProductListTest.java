@@ -75,6 +75,34 @@ public class ProductListTest extends TestBase {
         }
     }
 
+    @Test
+    public void validateThatUserCanSortItemsFromLowToHighPrice(){
+        try {
+            productList.selectProductSort(GeneralConstants.SORT_PRICE_LOW_TO_HIGH);
+
+            softAssert.assertTrue(productList.assertOnPriceSort(GeneralConstants.SORT_PRICE_LOW_TO_HIGH));
+            softAssert.assertAll();
+
+        }catch (Exception e){
+            throw new SkipException(GeneralConstants.SKIPPED_MESSAGE, e);
+        }
+    }
+
+    @Test
+    public void validateThatUserCanSortItemsFromHighToLowPrice(){
+        try {
+            productList.selectProductSort(GeneralConstants.SORT_PRICE_HIGH_TO_LOW);
+
+            softAssert.assertTrue(productList.assertOnPriceSort(GeneralConstants.SORT_PRICE_HIGH_TO_LOW));
+            softAssert.assertAll();
+
+        }catch (Exception e){
+            throw new SkipException(GeneralConstants.SKIPPED_MESSAGE, e);
+        }
+    }
+
+
+
 //    @Test
 //    public void test(){
 //        System.out.println(driver.findElements(By.xpath("//div[@class='inventory_item_price']")).get(1).getText());

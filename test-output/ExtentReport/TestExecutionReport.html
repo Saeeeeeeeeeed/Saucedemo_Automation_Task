@@ -1,4 +1,13 @@
 
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +62,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 23, 2024 12:08:38 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 31, 2024 04:33:07 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,7 +78,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -112,10 +120,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -135,15 +143,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyThatUserCanNotLogInWithValidButNotRegisteredEmail</span>
-						<span class='test-time'>Jul 23, 2024 12:08:48 PM</span>
+						<span class='test-name'>validateUserCanLoginWithValidCredentialsSuccessfully</span>
+						<span class='test-time'>Aug 31, 2024 04:33:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2024 12:08:48 PM</span>
-	<span class='label end-time'>Jul 23, 2024 12:08:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+601ms</span>
+	<span class='label start-time'>Aug 31, 2024 04:33:15 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+638ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -157,9 +165,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:08:51 PM</td>
+				<td class='timestamp'>4:33:15 PM</td>
 				<td class='step-details'>
-						Pass Test case is: VerifyThatUserCanNotLogInWithValidButNotRegisteredEmail
+						Pass Test case is: validateUserCanLoginWithValidCredentialsSuccessfully
 					
 				</td>
 			</tr>
@@ -168,17 +176,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyThatItemsAreAddedToCartCorrectly</span>
-						<span class='test-time'>Jul 23, 2024 12:08:52 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>validateUserCanLogoutAndNavigateToLoginPage</span>
+						<span class='test-time'>Aug 31, 2024 04:33:15 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2024 12:08:52 PM</span>
-	<span class='label end-time'>Jul 23, 2024 12:09:32 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+648ms</span>
+	<span class='label start-time'>Aug 31, 2024 04:33:15 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+157ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -190,20 +198,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>12:09:31 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:16 PM</td>
 				<td class='step-details'>
-						Skipped Test case is: VerifyThatItemsAreAddedToCartCorrectly
+						Pass Test case is: validateUserCanLogoutAndNavigateToLoginPage
 					
-				</td>
-			</tr>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>12:09:32 PM</td>
-				<td class='step-details'>
-						Screenshot of skipped test:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='E:\Amazon_Automation_Task\src\test\resources\screenshots\VerifyThatItemsAreAddedToCartCorrectly.png' src='E:\Amazon_Automation_Task\src\test\resources\screenshots\VerifyThatItemsAreAddedToCartCorrectly.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -213,15 +213,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyThatYouCanNotSeeYourOrders</span>
-						<span class='test-time'>Jul 23, 2024 12:09:33 PM</span>
+						<span class='test-name'>validateUserCanNotLoginWithInValidPassword</span>
+						<span class='test-time'>Aug 31, 2024 04:33:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2024 12:09:33 PM</span>
-	<span class='label end-time'>Jul 23, 2024 12:09:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+758ms</span>
+	<span class='label start-time'>Aug 31, 2024 04:33:16 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+296ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -235,9 +235,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:09:35 PM</td>
+				<td class='timestamp'>4:33:17 PM</td>
 				<td class='step-details'>
-						Pass Test case is: VerifyThatYouCanNotSeeYourOrders
+						Pass Test case is: validateUserCanNotLoginWithInValidPassword
 					
 				</td>
 			</tr>
@@ -246,17 +246,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyThatYouCanNotSeeYourAddresses</span>
-						<span class='test-time'>Jul 23, 2024 12:09:36 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>validateUserCanNotLoginWithInValidUsername</span>
+						<span class='test-time'>Aug 31, 2024 04:33:17 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2024 12:09:36 PM</span>
-	<span class='label end-time'>Jul 23, 2024 12:10:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+445ms</span>
+	<span class='label start-time'>Aug 31, 2024 04:33:17 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+361ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -268,20 +268,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>12:10:08 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:17 PM</td>
 				<td class='step-details'>
-						Skipped Test case is: VerifyThatYouCanNotSeeYourAddresses
+						Pass Test case is: validateUserCanNotLoginWithInValidUsername
 					
-				</td>
-			</tr>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>12:10:08 PM</td>
-				<td class='step-details'>
-						Screenshot of skipped test:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='E:\Amazon_Automation_Task\src\test\resources\screenshots\VerifyThatYouCanNotSeeYourAddresses.png' src='E:\Amazon_Automation_Task\src\test\resources\screenshots\VerifyThatYouCanNotSeeYourAddresses.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -291,15 +283,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyThatYouCanSeeYourLists</span>
-						<span class='test-time'>Jul 23, 2024 12:10:09 PM</span>
+						<span class='test-name'>validateUserCanNotLoginWithInValidUsernameAndPassword</span>
+						<span class='test-time'>Aug 31, 2024 04:33:17 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2024 12:10:09 PM</span>
-	<span class='label end-time'>Jul 23, 2024 12:10:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+333ms</span>
+	<span class='label start-time'>Aug 31, 2024 04:33:17 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+331ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -313,9 +305,359 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:10:12 PM</td>
+				<td class='timestamp'>4:33:18 PM</td>
 				<td class='step-details'>
-						Pass Test case is: VerifyThatYouCanSeeYourLists
+						Pass Test case is: validateUserCanNotLoginWithInValidUsernameAndPassword
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatAllProductsAreDisplayedCorrectly</span>
+						<span class='test-time'>Aug 31, 2024 04:33:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:18 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+294ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:18 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatAllProductsAreDisplayedCorrectly
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatUserCanSortItemsFromHighToLowPrice</span>
+						<span class='test-time'>Aug 31, 2024 04:33:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:19 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+202ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:19 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatUserCanSortItemsFromHighToLowPrice
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatUserCanSortItemsFromLowToHighPrice</span>
+						<span class='test-time'>Aug 31, 2024 04:33:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:19 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+171ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:19 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatUserCanSortItemsFromLowToHighPrice
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatUserProductDescriptionDisplayOnProductDetailsPage</span>
+						<span class='test-time'>Aug 31, 2024 04:33:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:20 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+73ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:20 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatUserProductDescriptionDisplayOnProductDetailsPage
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatUserProductNameDisplayOnProductDetailsPage</span>
+						<span class='test-time'>Aug 31, 2024 04:33:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:20 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+88ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:20 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatUserProductNameDisplayOnProductDetailsPage
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>validateThatUserProductPriceDisplayOnProductDetailsPage</span>
+						<span class='test-time'>Aug 31, 2024 04:33:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:21 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+91ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:21 PM</td>
+				<td class='step-details'>
+						Pass Test case is: validateThatUserProductPriceDisplayOnProductDetailsPage
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreAdded</span>
+						<span class='test-time'>Aug 31, 2024 04:33:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:21 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+135ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:21 PM</td>
+				<td class='step-details'>
+						Pass Test case is: VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreAdded
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreRemoved</span>
+						<span class='test-time'>Aug 31, 2024 04:33:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:22 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+155ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:32 PM</td>
+				<td class='step-details'>
+						Pass Test case is: VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreRemoved
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyThatTheCartIsUpdatedWhenAddingProductToShoppingCart</span>
+						<span class='test-time'>Aug 31, 2024 04:33:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:33 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+263ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:33 PM</td>
+				<td class='step-details'>
+						Pass Test case is: verifyThatTheCartIsUpdatedWhenAddingProductToShoppingCart
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyThatTheCartIsUpdatedWhenRemovingProductFromShoppingCart</span>
+						<span class='test-time'>Aug 31, 2024 04:33:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2024 04:33:33 PM</span>
+	<span class='label end-time'>Aug 31, 2024 04:33:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+245ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:33:34 PM</td>
+				<td class='step-details'>
+						Pass Test case is: verifyThatTheCartIsUpdatedWhenRemovingProductFromShoppingCart
 					
 				</td>
 			</tr>
@@ -352,7 +694,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -364,19 +706,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 23, 2024 12:08:38 PM</div>
+					<div class='panel-lead'>Aug 31, 2024 04:33:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 23, 2024 12:10:17 PM</div>
+			 		<div class='panel-lead'>Aug 31, 2024 04:33:38 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 39s+250ms</div>
+					<div class='panel-lead'>0h 0m 31s+29ms</div>
 				</div>
 			</div>
 		</div>
@@ -387,14 +729,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 5,
-				passParent: 3,
+                parentCount: 15,
+				passParent: 15,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 2,
-				exceptionsParent: 2,
+				skipParent: 0,
+				exceptionsParent: 0,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -419,7 +761,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "VerifyThatUserCanNotLogInWithValidButNotRegisteredEmail":2.601,"VerifyThatItemsAreAddedToCartCorrectly":39.648,"VerifyThatYouCanNotSeeYourOrders":1.758,"VerifyThatYouCanNotSeeYourAddresses":32.445,"VerifyThatYouCanSeeYourLists":2.333
+			        "validateUserCanLoginWithValidCredentialsSuccessfully":0.638,"validateUserCanLogoutAndNavigateToLoginPage":1.157,"validateUserCanNotLoginWithInValidPassword":0.296,"validateUserCanNotLoginWithInValidUsername":0.361,"validateUserCanNotLoginWithInValidUsernameAndPassword":0.331,"validateThatAllProductsAreDisplayedCorrectly":0.294,"validateThatUserCanSortItemsFromHighToLowPrice":0.202,"validateThatUserCanSortItemsFromLowToHighPrice":0.171,"validateThatUserProductDescriptionDisplayOnProductDetailsPage":0.073,"validateThatUserProductNameDisplayOnProductDetailsPage":0.088,"validateThatUserProductPriceDisplayOnProductDetailsPage":0.091,"VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreAdded":0.135,"VerifyThaTheShoppingCartBadgeCountUpdatesCorrectlyWhenItemsAreRemoved":10.155,"verifyThatTheCartIsUpdatedWhenAddingProductToShoppingCart":0.263,"verifyThatTheCartIsUpdatedWhenRemovingProductFromShoppingCart":0.245
 			};
 		</script>
 	

@@ -3,6 +3,7 @@ package pages.base;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.Select;
 import pages.constants.GeneralConstants;
 import pages.constants.GeneralPaths;
 import utilities.PropertiesReader;
@@ -129,6 +130,12 @@ public class PageBase {
     public void selectFromListByWholeText(By listLocator, String targetText) throws Exception {
         waits.waitForVisibility(listLocator);
         getElementFromListByWholeText(listLocator, targetText).click();
+    }
+
+    public void selectFromListByVisibleText(By locator,String text){
+        WebElement selectElement = driver.findElement(locator);
+        Select select = new Select(selectElement);
+        select.selectByVisibleText(text);
     }
 
     // Method to click on a random element in a list of WebElements

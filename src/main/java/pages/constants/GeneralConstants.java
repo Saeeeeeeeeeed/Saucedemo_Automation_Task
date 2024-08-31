@@ -36,4 +36,7 @@ public class GeneralConstants {
             "$15.99"
     );
 
+    public static final String SORT_PRICE_LOW_TO_HIGH = "Price (low to high)";
+    public static final String SORT_PRICE_HIGH_TO_LOW = "Price (high to low)";
+
 }

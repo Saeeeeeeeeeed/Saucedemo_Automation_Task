@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import pages.base.PageBase;
 import pages.constants.GeneralConstants;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class ProductList extends PageBase {
@@ -26,6 +28,7 @@ public class ProductList extends PageBase {
     By productName = By.xpath("//div[@class='inventory_details_name large_size']");
     By productPrice = By.xpath("//div[@class='inventory_details_price']");
     By productDescription = By.xpath("//div[@class='inventory_details_price']");
+    By sortList = By.xpath("//select[@class='product_sort_container']");
 
     public void navigateToProductListPage() throws Exception {
         loginPage.navigateToLoginPage();
@@ -60,5 +63,38 @@ public class ProductList extends PageBase {
 
     public boolean assertOnProductDescription(){
         return !findElements(productDescription).isEmpty();
+    }
+
+    public void selectProductSort(String sort){
+        selectFromListByVisibleText(sortList,sort);
+    }
+
+    public Boolean assertOnPriceSort(String sortType) throws Exception {
+        List<String> priceStrings = getListValues(priceList);
+        List<Double> prices = new ArrayList<>();
+        boolean isAscending = true;
+        boolean isDescending = true;
+
+        for (String priceString : priceStrings) {
+            String trimmedPriceString = priceString.replace("$", "");
+            double price = Double.parseDouble(trimmedPriceString);
+            prices.add(price);
+        }
+
+        for (int i = 0; i < prices.size() - 1; i++) {
+            if (prices.get(i) > prices.get(i + 1)) {
+                isAscending = false;
+            }
+            if (prices.get(i) < prices.get(i + 1)) {
+                isDescending = false;
+            }
+        }
+
+        if (sortType.contains(("(low to high)"))){
+            return isAscending && !isDescending;
+        }
+        else {
+            return !isAscending && isDescending;
+        }
     }
 }

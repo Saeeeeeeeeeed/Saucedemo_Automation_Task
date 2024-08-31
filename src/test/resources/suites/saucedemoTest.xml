@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test">
+    <parameter name="url" value="https://www.saucedemo.com/" />
+    <listeners>
+        <listener class-name="com.test.listeners.ExtentReportListener"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="com.test.saucedemoTest.LoginTest"/>
+            <class name="com.test.saucedemoTest.ProductListTest"/>
+            <class name="com.test.saucedemoTest.CartTest"/>
+        </classes>
+    </test>
+</suite>

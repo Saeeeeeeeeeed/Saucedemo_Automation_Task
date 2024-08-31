@@ -20,6 +20,8 @@ public class LoginPage extends PageBase {
     By loginButton = By.id("login-button");
     By appLogo = By.xpath("//div[@class='app_logo']");
     By invalidCredentialsError = By.xpath("//h3[@data-test='error']");
+    By optionsDropList = By.id("react-burger-menu-btn");
+    By logoutOption = By.id("logout_sidebar_link");
 
     public void navigateToLoginPage() {
         navigateTo(urlProperties.getProperty(GeneralConstants.LOGIN_PAGE_URL));
@@ -41,6 +43,14 @@ public class LoginPage extends PageBase {
         click(loginButton);
     }
 
+    public void clickOnOptionsDropList() throws Exception {
+        click(optionsDropList);
+    }
+
+    public void clickOnLogoutOption() throws Exception {
+        click(logoutOption);
+    }
+
     public boolean assertOnLogo () throws Exception {
         if (!findElements(appLogo).isEmpty()) {
             return getText(appLogo).equals(GeneralConstants.APP_LOGO_TITLE);
@@ -49,6 +59,10 @@ public class LoginPage extends PageBase {
 
     public boolean assertOnLoginInvalidCredentials() throws Exception {
         return getText(invalidCredentialsError).equals(GeneralConstants.INVALID_CREDENTIALS_ERROR_MESSAGE);
+    }
+
+    public boolean assertOnLoginPage(){
+        return !findElements(loginButton).isEmpty();
     }
 
 }

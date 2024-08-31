@@ -85,4 +85,21 @@ public class LoginTest extends TestBase {
         }
     }
 
+    ///////////////////////////////////// LOGOUT FUNCTIONALITY ////////////////////////////////////////
+    @Test
+    public void validateUserCanLogoutAndNavigateToLoginPage(){
+        try {
+            loginPage.enterUserName(userName);
+            loginPage.enterPassword(password);
+            loginPage.clickOnLoginButton();
+            loginPage.clickOnOptionsDropList();
+            loginPage.clickOnLogoutOption();
+
+            softAssert.assertTrue(loginPage.assertOnLoginPage());
+            softAssert.assertAll();
+        }catch (Exception e){
+            throw new SkipException(GeneralConstants.SKIPPED_MESSAGE, e);
+        }
+    }
+
 }
